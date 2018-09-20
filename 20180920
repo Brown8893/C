@@ -9,3 +9,18 @@ int main(void)
    system("pause");
    return 0;
 }
+
+
+
+gedit hello.c
+
+gcc hello.c
+
+ls
+a.out    Documents  hello.c  Pictures  Templates
+Desktop  Downloads  Music    Public    Videos
+
+./a.out
+Hello C!
+Hello World!
+sh: 1: pause: not found
