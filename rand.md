@@ -1,0 +1,7 @@
+# 一、rand() 函數：
+>* 要使用 rand() 函數，必須 include 它的標頭檔 stdlib.h (stdlib 為 Standard Library, 標準函式庫)
+```
+取 1-10 的亂數 a=(rand() % 10) +1
+取 1-100 的亂數 a=(rand() % 100) +1
+取 100-1000 的亂數 a=(rand() % 901) +100
+```
