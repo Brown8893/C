@@ -51,5 +51,27 @@ main()
 }
 ```
 ```
+A
+```
+```
+執行下面的程式後，total的值是 (A)45   (B)48  (C)50  (D)55
+
+#include <stdio.h>
+main() 
+{
+    int i = 1;
+    int total = 0;
+    do
+    {
+       printf("數字: %d\n", i);
+       total += i;
+       i++;
+       if ( i >= 10 ) break;
+    } while(1);
+    printf("總和: %d\n", total);
+    getchar();
+}
+```
+```
 
 ```
