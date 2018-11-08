@@ -90,3 +90,16 @@ int f(int x)
 ```
 
 ```
+```
+設有一副程式定義如下  
+Function f(x,y:integer):integer,
+begin
+if y=0 then f=1;
+else f:=f(x,y-1)*x;
+end; 
+
+若a，b均為正整數，則呼叫f(a，b)時的結果為:(A)a*b (B)a+b (C)a**b(代表a的b乘方) (D)a/b
+```
+```
+
+```
