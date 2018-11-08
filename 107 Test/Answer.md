@@ -73,5 +73,20 @@ main()
 }
 ```
 ```
+A
+```
+```
+有一Recursive的C語言程式如下，試間f(3)=?
+(A) 10 (B) 12  (C) 14 (D) I6 (E) 30
+
+int f(int x)
+{
+	if(x<=1)
+		   return 1;
+	else
+		return (x**2+f(x-1));
+}
+```
+```
 
 ```
