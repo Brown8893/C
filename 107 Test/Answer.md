@@ -103,3 +103,141 @@ end;
 ```
 
 ```
+# 程式設計題
+
+```
+01.修正底下程式錯誤,完成程式計算3到37的偶數和
+
+#include <stdio.h>
+main() 
+{
+    int i = 1;
+    int total = 3;
+    for ( i = 1; i <= 33; i++ )
+    {  
+       if ( (i % 2) == 0 ) continue;
+       total += i;
+    }
+    printf("總和為: %d\n", total);
+    getchar();
+}
+```
+```
+01.答
+#include <stdio.h>
+main() 
+{
+    int i = 1;
+    int total = 0;
+    for ( i = 3; i <= 37; i++ )
+    {  
+       if ( (i % 2) != 0 ) continue;
+       total += i;
+    }
+    printf("總和為%d\n", total);
+    getchar();
+}
+```
+```
+02.1+3+…+99的總和程式設計技術
+[1]用三種迴圈方式撰寫1+3+…+101的總和。
+[2]用Recursion方式撰寫1+3+…+99的總和。
+```
+```
+02[1].a_for
+#include <stdio.h>
+
+int main() 
+{
+
+    int total=0 , i ;
+    for ( i = 1; i <= 101; i++ )
+    {  
+       if ( (i % 2) == 0 ) continue;
+       total += i;
+    }
+    printf("總和為：%d\n", total);
+    return 0 ;
+}
+```
+```
+02[1].b
+#include <stdio.h>
+#include <stdlib.h> 
+int main() 
+{
+
+    int sum=0 , i=0 ;
+    while (sum<=101)
+    {  
+       sum+=1 ;
+       
+       if ( (sum % 2) == 0 ) continue;
+       i += sum;
+    }
+    printf("總和為：%d\n", i);
+    return 0 ;
+}
+```
+```
+02[1].c
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+   int n,i=1,sum=1; /* 設定迴圈初值 */
+   do
+   {
+      printf("請輸入n值 (n0): ");
+      scanf("%d",&n);
+   }
+   while (n<=0);  /* 當n<=0時重複輸入n的值 */
+
+   do
+      sum+=i+=2;  /* 計算sum=sum+i之後，i的值再加1 */
+   while (i < n); /* 當i<=n時執行累加的動作 */
+   printf("1+3+...+%d=%d\n",n,sum);
+   printf("%d\n",i);
+   system("pause");
+   return 0;
+}
+```
+```
+04.函數設計題:完成底下計算次方函數power(x,n):x**n
+power(2,5)==2*2*2*2*2=2**5=32
+power(2.11,5)==2.11*2.11*2.11*2.11*2.11=2.11**5
+
+請使用下列loop及Recursion技術設計次方函數power(x,n):
+power_for:使用for loop開發的次方函數
+power_while:使用while loop開發的次方函數
+power_doWhile:使用do While loop開發的次方函數
+power_r:使用Recursion方式開發的次方函數
+```
+```
+04_for
+#include <stdio.h>
+#include <stdlib.h>
+
+double power_for(double, int);	
+double power_while(double, int);
+double power_doWhile(double, int);
+double power_r(double, int);
+
+int main(void)
+{
+   double x=2;		
+   int n=5;		
+   printf("%lf的%d次方是%lf\n",x,n,power_for(x,n)); 
+   system("pause");
+   return 0;
+}
+
+double power_for(double base, int n) 
+{
+   int i;
+   double pow=1.0;
+   for(i=1;i<=n;i++)
+      pow=pow*base;
+   return pow;
+}
+```
