@@ -188,7 +188,7 @@ int main(void)
    int n,i=1,sum=1; /* 設定迴圈初值 */
    do
    {
-      printf("請輸入n值 (n0): ");
+      printf("請輸入n值 (n>0): ");
       scanf("%d",&n);
    }
    while (n<=0);  /* 當n<=0時重複輸入n的值 */
