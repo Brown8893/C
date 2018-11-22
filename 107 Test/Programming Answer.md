@@ -51,6 +51,5 @@ int main(void)
    getchar();
 }
 ```
-# B. 函數設計題:完成底下計算次方函數 power(x,n):x**n，請使用下列loop及Recursion技術設計次方函數power(x,n):
-# power(2,5)==2*2*2*2*2=2**5=32
+# B. 函數設計題:完成底下計算次方函數 power(x,n):x**n，請使用三種loop及Recursion技術設計次方函數power(x,n): [power(2,5)==2*2*2*2*2=2**5=32]
 ## B_power_for
