@@ -17,5 +17,21 @@ main()
 ```
 ## A_while
 ```
+#include <stdio.h>
+#include <stdlib.h>
+int main(int x)
+{
+ int i=1,total=0;
+	  while(i<=401)
+	    {
+		  total+=i;
+		  i+=4; 
+		}
+ printf("1+5+9+...+401 等差級數的總和為%d\n",total);
+ getchar();
+}
+```
+## A_dowhile
+```
 
 ```
