@@ -138,3 +138,224 @@ double power(double base, int n)
    return pow;
 }
 ```
+# B_power_dowhile
+```
+#include<stdio.h>
+#include<conio.h>
+int main(void)
+{
+    int base, exponent,power, i;
+    power = 1;
+    i = 1;
+    while(i <= 5)
+    do
+    {
+        power = power * 2;
+        i++;
+    }
+	while(i<=base);
+    
+    printf("Power : %d", power);
+    return 0;
+    getch();
+}
+```
+# B_power_r
+```
+#include <stdio.h>
+
+int power(int n1, int n2);
+
+int main()
+{
+    int base=2, powerRaised=5, result;
+
+ 
+    result = power(base, powerRaised);
+
+    printf("%d**%d = %d", base, powerRaised, result);
+    return 0;
+}
+
+int power(int base, int powerRaised)
+{
+    if (powerRaised != 0)
+        return (base*power(base, powerRaised-1));
+    else
+        return 1;
+}
+```
+# C_fac_for
+```
+#include <stdio.h>
+ 
+int main()
+{
+  int c, n=5, fact = 1;
+  for (c = 1; c <= n; c++)
+    fact = fact * c;
+ 
+  printf("Factorial of %d = %d\n", n, fact);
+ 
+  return 0;
+}
+```
+# C_fac_while
+```
+#include<stdio.h>
+#include<conio.h>
+int main(void)
+{
+    int n=5,i,f;
+    f=i=1;
+    while(i<=n)
+    {
+        f*=i;
+        i++;
+    }
+    printf("The Factorial of %d is : %d",n,f);
+    getch();
+}
+```
+# C_fac_dowhile
+```
+ #include<stdio.h>
+ #include<conio.h>
+ int main(void)
+ {
+    long int i,n=5,fact=1; /*variable declaration */
+
+    /* do loop start */
+    i=1;
+    do
+    {
+       fact*=i;
+       i++;
+    }
+    while(i<=n);
+ 
+    printf("Factorial = %ld\n",fact);
+    getch();
+    }
+```
+# C_fac_r
+```
+#include <stdio.h>
+long int multiplyNumbers(int n);
+
+int main()
+{
+   int n=5;
+ 
+   printf("Factorial of %d = %ld", n, multiplyNumbers(n));
+   return 0;
+}
+long int multiplyNumbers(int n)
+{
+   if (n >= 1)
+       return n*multiplyNumbers(n-1);
+   else
+       return 1;
+}
+```
+# D_fib_for
+```
+#include <stdio.h>
+int main()
+{
+    int i, n, t1 = 0, t2 = 1, nextTerm;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for (i = 1; i <= n; ++i)
+    {
+        printf("%d, ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+    return 0;
+}
+```
+# D_fib_while
+```
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int f1=0,f2=1,f3,i=3,len;
+    printf("enter length of the  fibonacci series:");
+    scanf("%d",&len);
+    printf("%d\t%d",f1,f2); // It prints the starting two values
+    while(i<=len)           // checks the condition
+    {
+        f3=f1+f2;               // performs add operation on previous two  values
+        printf("\t%d",f3);      // It prints from third value to given length
+        f1=f2;
+        f2=f3;
+        i=i+1;                  // incrementing the i value by 1
+    }
+    getch();
+}
+```
+# D_fib_dowhile
+```
+#include<stdio.h>
+#include<conio.h>
+ 
+int main(void)
+{
+    int n,f,f1=-1,f2=1;
+ 
+    printf("  Enter The Number Of Terms:");
+    scanf("%d",&n);
+     
+    printf("  The Fibonacci Series is:");
+     
+    do
+    {
+        f=f1+f2;
+        f1=f2;
+        f2=f;
+        printf("  \n %d",f);
+        n--;
+    }while(n>0);
+    getch();
+}
+```
+# D_fib_r
+```
+#include<stdio.h>
+ 
+int Fibonacci(int);
+ 
+int main()
+{
+   int n, i = 0, c;
+ 
+   scanf("%d",&n);
+ 
+   printf("Fibonacci series\n");
+ 
+   for ( c = 1 ; c <= n ; c++ )
+   {
+      printf("%d\n", Fibonacci(i));
+      i++; 
+   }
+ 
+   return 0;
+}
+ 
+int Fibonacci(int n)
+{
+   if ( n == 0 )
+      return 0;
+   else if ( n == 1 )
+      return 1;
+   else
+      return ( Fibonacci(n-1) + Fibonacci(n-2) );
+} 
+```
