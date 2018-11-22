@@ -53,3 +53,33 @@ int main(void)
 ```
 # B. 函數設計題:完成底下計算次方函數 power(x,n):x**n，請使用三種loop及Recursion技術設計次方函數power(x,n): [power(2,5)==2*2*2*2*2=2**5=32]
 ## B_power_for
+```
+#include <stdio.h>
+#include <stdlib.h>
+double power(double, int);	
+int main(void)
+{
+   double x;		
+   int n;		
+
+   printf("請輸入底數與次方:");	
+   scanf("%lf,%d",&x,&n); 	
+   printf("%lf的%d次方=%lf\n",x,n,power(x,n)); 
+
+   system("pause");
+   return 0;
+}
+
+double power(double base, int n)   
+{
+   int i;
+   double pow=1.0;
+   for(i=1;i<=n;i++)		
+      pow=pow*base;
+   return pow;
+}
+```
+# B_power_while
+```
+
+```
