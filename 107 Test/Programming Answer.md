@@ -109,3 +109,32 @@ double power(double base, int n)
    return pow;
 }
 ```
+```
+#include <stdio.h>
+#include <stdlib.h>
+double power(double, int);	
+int main(void)
+{
+   double x;		
+   int n;		
+
+   printf("請輸入底數與次方:");	
+   scanf("%lf,%d",&x,&n); 	
+   printf("%lf的%d次方=%lf\n",x,n,power(x,n)); 
+
+   system("pause");
+   return 0;
+}
+
+double power(double base, int n)   
+{
+   int i=1;
+   double pow=1.0;
+   while(i<=n)
+	{
+	i++ ; 	
+      pow=pow*base;
+    }
+   return pow;
+}
+```
