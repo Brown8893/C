@@ -1,4 +1,5 @@
-# A_for
+# A. 請使用三種迴圈方式撰寫完成計算1+5+9+...+401等差級數的總和之程式設計
+## A_for
 ```
 #include <stdio.h>
 #include <stdlib.h> 
@@ -14,7 +15,7 @@ main()
     getchar();
 }
 ```
-# A_while
+## A_while
 ```
 
 ```
