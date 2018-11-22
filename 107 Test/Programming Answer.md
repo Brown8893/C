@@ -1,5 +1,5 @@
 # A. 請使用三種迴圈方式撰寫完成計算1+5+9+...+401等差級數的總和之程式設計
-## A_for
+## A、for
 ```
 #include <stdio.h>
 #include <stdlib.h> 
@@ -15,7 +15,7 @@ main()
     getchar();
 }
 ```
-## A_while
+## A、while
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -31,7 +31,7 @@ int main(int x)
  getchar();
 }
 ```
-## A_dowhile
+## A、dowhile
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -52,7 +52,7 @@ int main(void)
 }
 ```
 # B. 函數設計題:完成底下計算次方函數 power(x,n):x**n，請使用三種loop及Recursion技術設計次方函數power(x,n): [power(2,5)==2*2*2*2*2=2**5=32]
-## B_power_for
+## B、power_for
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -79,7 +79,7 @@ double power(double base, int n)
    return pow;
 }
 ```
-# B_power_while
+# B、power_while
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -138,7 +138,7 @@ double power(double base, int n)
    return pow;
 }
 ```
-# B_power_dowhile
+# B、power_dowhile
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -160,7 +160,7 @@ int main(void)
     getch();
 }
 ```
-# B_power_r
+# B、power_r
 ```
 #include <stdio.h>
 
@@ -185,7 +185,7 @@ int power(int base, int powerRaised)
         return 1;
 }
 ```
-# C_fac_for
+# C、fac_for
 ```
 #include <stdio.h>
  
@@ -200,7 +200,7 @@ int main()
   return 0;
 }
 ```
-# C_fac_while
+# C、fac_while
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -217,7 +217,7 @@ int main(void)
     getch();
 }
 ```
-# C_fac_dowhile
+# C、fac_dowhile
 ```
  #include<stdio.h>
  #include<conio.h>
@@ -238,7 +238,7 @@ int main(void)
     getch();
     }
 ```
-# C_fac_r
+# C、fac_r
 ```
 #include <stdio.h>
 long int multiplyNumbers(int n);
@@ -258,7 +258,7 @@ long int multiplyNumbers(int n)
        return 1;
 }
 ```
-# D_fib_for
+# D、fib_for
 ```
 #include <stdio.h>
 int main()
@@ -280,7 +280,7 @@ int main()
     return 0;
 }
 ```
-# D_fib_while
+# D、fib_while
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -301,7 +301,7 @@ main()
     getch();
 }
 ```
-# D_fib_dowhile
+# D、fib_dowhile
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -326,7 +326,7 @@ int main(void)
     getch();
 }
 ```
-# D_fib_r
+# D、fib_r
 ```
 #include<stdio.h>
  
