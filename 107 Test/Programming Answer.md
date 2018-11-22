@@ -26,7 +26,7 @@ int main(int x)
 	    {
 		  total+=i;
 		  i+=4; 
-		}
+            }
  printf("1+5+9+...+401 等差級數的總和為%d\n",total);
  getchar();
 }
