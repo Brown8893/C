@@ -51,13 +51,6 @@ int main(void)
    getchar();
 }
 ```
-# B. 函數設計題:完成底下計算次方函數 power(x,n):x**n
+# B. 函數設計題:完成底下計算次方函數 power(x,n):x**n，請使用下列loop及Recursion技術設計次方函數power(x,n):
 # power(2,5)==2*2*2*2*2=2**5=32
-# power(2.11,5)==2.11*2.11*2.11*2.11*2.11=2.11**5=41.8227202051
-
-# 請使用下列loop及Recursion技術設計次方函數power(x,n):
-# power_for:使用for loop開發的次方函數
-# power_while:使用while loop開發的次方函數
-# power_dowhile:使用dowhile loop開發的次方函數
-# power_r:使用Recursion loop開發的次方函數
 ## B_power_for
