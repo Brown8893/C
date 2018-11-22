@@ -79,7 +79,7 @@ double power(double base, int n)
    return pow;
 }
 ```
-# B、power_while
+## B、power_while
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -138,7 +138,7 @@ double power(double base, int n)
    return pow;
 }
 ```
-# B、power_dowhile
+## B、power_dowhile
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -160,7 +160,7 @@ int main(void)
     getch();
 }
 ```
-# B、power_r
+## B、power_r
 ```
 #include <stdio.h>
 
@@ -185,7 +185,8 @@ int power(int base, int powerRaised)
         return 1;
 }
 ```
-# C、fac_for
+# C.函數設計題:請設計由使用者輸入一正整數n, fac(n):n！=n*(n-1)*...*2*1，請使用下列loop及Recursion技術設計階乘函數,然後計算出factorial階乘函數fac()的值。[fac(5):5*4*3*2*1==5！=120]
+## C、fac_for
 ```
 #include <stdio.h>
  
@@ -200,7 +201,7 @@ int main()
   return 0;
 }
 ```
-# C、fac_while
+## C、fac_while
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -217,7 +218,7 @@ int main(void)
     getch();
 }
 ```
-# C、fac_dowhile
+## C、fac_dowhile
 ```
  #include<stdio.h>
  #include<conio.h>
@@ -238,7 +239,7 @@ int main(void)
     getch();
     }
 ```
-# C、fac_r
+## C、fac_r
 ```
 #include <stdio.h>
 long int multiplyNumbers(int n);
@@ -258,7 +259,8 @@ long int multiplyNumbers(int n)
        return 1;
 }
 ```
-# D、fib_for
+# D.函數設計題:請設計由使用者輸入一正整數n, n>2 fib(n)=fib(n-1)+fib(n-2),然後計算出費式數列函數fib()的值 費式數列函數fib(n):
+## D、fib_for
 ```
 #include <stdio.h>
 int main()
@@ -280,7 +282,7 @@ int main()
     return 0;
 }
 ```
-# D、fib_while
+## D、fib_while
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -301,7 +303,7 @@ main()
     getch();
 }
 ```
-# D、fib_dowhile
+## D、fib_dowhile
 ```
 #include<stdio.h>
 #include<conio.h>
@@ -326,7 +328,7 @@ int main(void)
     getch();
 }
 ```
-# D、fib_r
+## D、fib_r
 ```
 #include<stdio.h>
  
