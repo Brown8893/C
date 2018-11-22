@@ -13,9 +13,6 @@ power_for:使用for loop開發的次方函數
 power_while:使用while loop開發的次方函數
 power_dowhile:使用dowhile loop開發的次方函數
 power_r:使用Recursion loop開發的次方函數
-
-程式片段如下：只要寫出函數的程式部分即可
-
 ```
 
 ```
