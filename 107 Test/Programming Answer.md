@@ -1,6 +1,7 @@
 # A_for
 ```
 #include <stdio.h>
+#include <stdlib.h> 
 main() 
 {
     int i = 1;
